@@ -1,0 +1,164 @@
+{
+  "project_info": {
+    "project_number": "300827510566",
+    "firebase_url": "https://flutterapp-782b6-default-rtdb.firebaseio.com",
+    "project_id": "flutterapp-782b6",
+    "storage_bucket": "flutterapp-782b6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:300827510566:android:7da1e59740a4d8765063e7",
+        "android_client_info": {
+          "package_name": "com.example.app1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "300827510566-g02fndm35tb5s89ptkvpem662itt6i0r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-yqG7E3jgg8lnfmvY5VolEXhE09b2OqE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "300827510566-g02fndm35tb5s89ptkvpem662itt6i0r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:300827510566:android:f205c5121b82ca465063e7",
+        "android_client_info": {
+          "package_name": "com.example.blogs_assignment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "300827510566-b0go60vgjjm7e14ns86j6u36f62b9sqv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.blogs_assignment",
+            "certificate_hash": "943f8a516e3aa3be2bc3c74ac84c215f477cc0d5"
+          }
+        },
+        {
+          "client_id": "300827510566-g02fndm35tb5s89ptkvpem662itt6i0r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-yqG7E3jgg8lnfmvY5VolEXhE09b2OqE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "300827510566-g02fndm35tb5s89ptkvpem662itt6i0r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:300827510566:android:2c6843e9959bb3675063e7",
+        "android_client_info": {
+          "package_name": "com.example.caloriecounter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "300827510566-g02fndm35tb5s89ptkvpem662itt6i0r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-yqG7E3jgg8lnfmvY5VolEXhE09b2OqE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "300827510566-g02fndm35tb5s89ptkvpem662itt6i0r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:300827510566:android:0ace9d874335187d5063e7",
+        "android_client_info": {
+          "package_name": "com.example.caloriescounter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "300827510566-g02fndm35tb5s89ptkvpem662itt6i0r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-yqG7E3jgg8lnfmvY5VolEXhE09b2OqE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "300827510566-g02fndm35tb5s89ptkvpem662itt6i0r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:300827510566:android:87451c5d8246575e5063e7",
+        "android_client_info": {
+          "package_name": "com.example.demo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "300827510566-g02fndm35tb5s89ptkvpem662itt6i0r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-yqG7E3jgg8lnfmvY5VolEXhE09b2OqE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "300827510566-g02fndm35tb5s89ptkvpem662itt6i0r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
