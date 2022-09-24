@@ -1,5 +1,7 @@
 import 'package:blogs_assignment/features/auth/screens/authscreen.dart';
+import 'package:blogs_assignment/features/auth/screens/registerScreen.dart';
 import 'package:blogs_assignment/features/auth/services/auth_Service.dart';
+import 'package:blogs_assignment/features/blogs/Screens/blogsUploadScreen.dart';
 import 'package:blogs_assignment/wrapper.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -24,12 +26,16 @@ class MyApp extends StatelessWidget {
         )
       ],
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         title: 'Blogs App',
         theme: ThemeData(),
         initialRoute: '/',
         routes: {
-          '/': (context) => Wrapper(),
-          '/authScreen': (context) => AuthScreen()
+          '/': (context) => BlogsUploadScreen(),
+          // '/': (context) => Wrapper(),
+          '/authScreen': (context) => AuthScreen(),
+          '/register': (context) => RegisterScreen(),
+          '/blogs_upload': (context) => BlogsUploadScreen()
         },
       ),
     );

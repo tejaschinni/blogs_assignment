@@ -1,5 +1,7 @@
 import 'package:blogs_assignment/comman_widgets/customTextFields_widgets.dart';
+import 'package:blogs_assignment/features/auth/services/auth_Service.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 class AuthScreen extends StatefulWidget {
   const AuthScreen({super.key});
@@ -11,8 +13,10 @@ class AuthScreen extends StatefulWidget {
 class _AuthScreenState extends State<AuthScreen> {
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
+    final authService = Provider.of<AuthService>(context);
     return SafeArea(
         child: Scaffold(
       body: Column(
@@ -36,15 +40,20 @@ class _AuthScreenState extends State<AuthScreen> {
           SizedBox(
             height: 5,
           ),
+          ElevatedButton(
+              onPressed: () {
+                authService.signInWithEmailandPassword(
+                    emailController.text, passwordController.text);
+              },
+              child: Text('Login')),
           InkWell(
-            // onTap: () {
-            //   Navigator.pushNamed(context, '/');
-            // },
+            onTap: () {
+              Navigator.pushNamed(context, '/register');
+            },
             child: Container(
               child: Text("Create account"),
             ),
           ),
-          ElevatedButton(onPressed: () {}, child: Text('Login')),
           SizedBox(
             height: 10,
           ),
