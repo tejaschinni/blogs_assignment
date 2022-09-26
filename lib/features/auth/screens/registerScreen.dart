@@ -1,5 +1,7 @@
 import 'package:blogs_assignment/comman_widgets/customTextFields_widgets.dart';
 import 'package:blogs_assignment/features/auth/services/auth_Service.dart';
+import 'package:blogs_assignment/features/auth/services/register_Service.dart';
+import 'package:blogs_assignment/provider/profileProvider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -17,6 +19,10 @@ class _RegisterScreenState extends State<RegisterScreen> {
   @override
   Widget build(BuildContext context) {
     final authService = Provider.of<AuthService>(context);
+    final register = Provider.of<ProfileProvider>(context);
+    print("ooooooooooooo");
+    emailController.text = register.googleUser!.email.toString();
+
     return SafeArea(
       child: Scaffold(
           body: Container(
@@ -51,8 +57,10 @@ class _RegisterScreenState extends State<RegisterScreen> {
             ),
             ElevatedButton(
                 onPressed: () async {
-                  await authService.createUser(emailController.text,
-                      passwordController.text, nameController.text.toString());
+                  authService.registerUser(
+                      emailController.text,
+                      nameController.text,
+                      register.googleUser!.photoUrl.toString(), []);
                 },
                 child: Text("Register "))
           ],
