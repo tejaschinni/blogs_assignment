@@ -1,7 +1,9 @@
 import 'package:blogs_assignment/features/auth/screens/authscreen.dart';
 import 'package:blogs_assignment/features/auth/services/auth_Service.dart';
+import 'package:blogs_assignment/features/homescreen/screens/homeScreen.dart';
 import 'package:blogs_assignment/features/profiles/screens/profileScreen.dart';
 import 'package:blogs_assignment/models/authorModel.dart';
+import 'package:blogs_assignment/provider/profileProvider.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -24,19 +26,21 @@ class _WrapperState extends State<Wrapper> {
 
   checkuser() {
     FirebaseAuth.instance.authStateChanges().listen((event) async {
+      print("----------------------");
+      print(event!.email);
       await FirebaseFirestore.instance
-          .collection('blogs')
+          .collection('blog')
           .doc('data')
           .collection('author')
-          .doc(event!.email.toString())
+          .doc(event.email.toString())
           .get()
           .then((value) {
+        print(event.email);
         if (value.exists) {
-          Navigator.push(context,
-              MaterialPageRoute(builder: (context) => ProfileScreen()));
+          // Provider.of<ProfileProvider>(context).user = event;
+          Navigator.pushNamed(context, '/homeScreen');
         } else {
-          Navigator.push(
-              context, MaterialPageRoute(builder: (context) => AuthScreen()));
+          Navigator.pushNamed(context, '/authScreen');
         }
       });
     });

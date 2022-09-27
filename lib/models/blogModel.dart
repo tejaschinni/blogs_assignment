@@ -3,13 +3,13 @@ class BlogModel {
   String? title;
   String? subtitle;
   String? description;
-  String? image;
+  String? coverImage;
   String? authorID;
 
   BlogModel(
       {this.authorID,
       this.description,
-      this.image,
+      this.coverImage,
       this.id,
       this.subtitle,
       this.title});

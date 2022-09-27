@@ -3,6 +3,7 @@ import 'package:blogs_assignment/features/auth/screens/registerScreen.dart';
 import 'package:blogs_assignment/features/auth/services/auth_Service.dart';
 import 'package:blogs_assignment/features/auth/services/register_Service.dart';
 import 'package:blogs_assignment/features/blogs/Screens/blogsUploadScreen.dart';
+import 'package:blogs_assignment/features/homescreen/screens/homeScreen.dart';
 import 'package:blogs_assignment/provider/profileProvider.dart';
 import 'package:blogs_assignment/wrapper.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -43,7 +44,8 @@ class MyApp extends StatelessWidget {
           '/': (context) => Wrapper(),
           '/authScreen': (context) => AuthScreen(),
           '/register': (context) => RegisterScreen(),
-          '/blogs_upload': (context) => BlogsUploadScreen()
+          '/blogs_upload': (context) => BlogsUploadScreen(),
+          '/homeScreen': (context) => HomeScreen()
         },
       ),
     );
